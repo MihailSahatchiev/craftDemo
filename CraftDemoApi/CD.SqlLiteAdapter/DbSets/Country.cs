@@ -7,6 +7,6 @@ namespace CD.SqlLiteAdapter.DbSets
         [Key]
         public int CountryId { get; set; }
 
-        public int CountryName { get; set; }
+        public string CountryName { get; set; }
     }
 }

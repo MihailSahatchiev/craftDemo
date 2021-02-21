@@ -16,5 +16,6 @@
   <ItemGroup>
     <ProjectReference Include="..\CD.Core\CD.Core.csproj" />
     <ProjectReference Include="..\CD.SqlLiteAdapter\CD.SqlLiteAdapter.csproj" />
+    <ProjectReference Include="..\CD.StatAdapter\CD.StatAdapter.csproj" />
   </ItemGroup>
 </Project>

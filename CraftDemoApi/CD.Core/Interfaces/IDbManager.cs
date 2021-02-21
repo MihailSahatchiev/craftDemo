@@ -6,5 +6,7 @@ namespace CD.Core.Interfaces
     public interface IDbManager
     {
         Task<Population> GetPopulationForByCountry(int id);
+
+        Task<AllCountriesPopulation> GetPopulationForAllCountries();
     }
 }

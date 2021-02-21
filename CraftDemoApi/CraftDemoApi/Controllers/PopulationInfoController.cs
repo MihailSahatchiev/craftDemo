@@ -18,7 +18,7 @@ namespace CraftDemoApi.Controllers
             this.mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
         }
 
-        [Route("getInfoPerCountry")]
+        [Route(Constants.CONTROLLER_ROUTE_POPULATION_GET_INFO_PERCOUNTRY)]
         [HttpPost]
         public async Task<IActionResult> GePopulationInfo([FromBody]PopulationByCountryRequestModel model)
         {
@@ -31,8 +31,8 @@ namespace CraftDemoApi.Controllers
                 return this.BadRequest();
         }
 
-        [Route("getListOfPopulationAllCountries")]
-        [HttpPost]
+        [Route(Constants.CONTROLLER_ROUTE_POPULATION_GET_LIST_OF_POPULATION_FORALL_COUNTRIES)]
+        [HttpGet]
         public async Task<IActionResult> GetListOfPopulationAllCountries()
         {
             bool pref = false;
